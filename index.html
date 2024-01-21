@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<div class="all">
+			<div class="time" id="time">
+			</div>
+			<div class="container">
+				<strong>
+					<input
+						type="text"
+						id="inputField"
+						class="inputField"
+						placeholder="0" />
+				</strong>
+				<div class="btns" id="Btn">
+					<button onclick="clr()" class="colored">C</button>
+					<button onclick="del()" class="colored">DEL</button>
+					<button onclick="insert('%')" class="colored">%</button>
+					<button onclick="insert('/')" class="colored">÷</button>
+					<button onclick="insert('7')" class="nClr">7</button>
+					<button onclick="insert('8')" class="nClr">8</button>
+					<button onclick="insert('9')" class="nClr">9</button>
+					<button onclick="insert('*')" class="colored">×</button>
+					<button onclick="insert('4')" class="nClr">4</button>
+					<button onclick="insert('5')" class="nClr">5</button>
+					<button onclick="insert('6')" class="nClr">6</button>
+					<button onclick="insert('-')" class="colored">-</button>
+					<button onclick="insert('1')" class="nClr">1</button>
+					<button onclick="insert('2')" class="nClr">2</button>
+					<button onclick="insert('3')" class="nClr">3</button>
+					<button onclick="insert('+')" class="colored">+</button>
+					<button onclick="insert('0')" class="nClr">0</button>
+					<button class="nClr" onclick="insert('.')">.</button>
+					<button class="colored equal" onclick="equal()">=</button>
+				</div>
+			</div>
+		</div>
+		<div class="appMenu">
+			<div class="icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="menu" id="menu">
+				<div class="blue"></div>
+				<div class="red"></div>
+				<div class="green"></div>
+				<div class="purple"></div>
+				<div class="pink"></div>
+				<div class="yellow"></div>
+				<div class="black"></div>
+			</div>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>

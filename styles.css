@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 105vh;
+    transition: .2s all;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+:root {
+    --WHITE: #fff;
+    --BLACK: #000;
+    --MAIN-COLOR: blue;
+}
+
+body.blue {
+    --MAIN-COLOR: blue;
+}
+
+body.green {
+    --MAIN-COLOR: green;
+}
+
+body.purple {
+    --MAIN-COLOR: purple;
+}
+
+body.pink {
+    --MAIN-COLOR: pink;
+}
+
+body.yellow {
+    --MAIN-COLOR: yellow;
+}
+
+body.black {
+    --MAIN-COLOR: black;
+}
+
+body.red {
+    --MAIN-COLOR: red;
+}
+
+.container {
+    border-radius: 10px;
+    width: 275px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+        -5px -5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 5px;
+}
+
+.btns {
+    width: 250px;
+    margin: 3px 5px;
+    display: grid;
+    gap: 10px 5px;
+    grid-template-columns: repeat(4, 60px);
+}
+
+button {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    margin: 2px;
+    text-align: center;
+    padding: 18px 10px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--MAIN-COLOR);
+}
+
+.equal {
+    border-radius: 20px;
+    width: 200%;
+}
+
+.colored {
+    color: var(--WHITE);
+    background-color: var(--MAIN-COLOR);
+}
+
+input {
+    margin: 1rem 0;
+    outline: var(--MAIN-COLOR)
+    width: 100%;
+    height: 45px;
+    text-align: right;
+    padding: 20px;
+    border: 3px solid var(--MAIN-COLOR);
+    border-radius: 20px;
+    color: var(--MAIN-COLOR);
+    font-size: 1.5rem;
+}
+
+input::placeholder {
+    color: var(--MAIN-COLOR);
+}
+
+.appMenu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.icon {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    width: 24px;
+}
+
+.icon span {
+    border-radius: 20px;
+    height: 3px;
+    background-color: var(--MAIN-COLOR);
+}
+
+.menu {
+    position: absolute;
+    top: 23px;
+    border-radius: 8px;
+    background-color: transparent;
+    width: 245px;
+    height: 40px;
+    transform: scale(0);
+    gap: 3px;
+    border: 1px solid gray;
+    padding: 4px 5px;
+    display: flex;
+    transition: .3s all ease;
+}
+
+.menu div {
+    border-radius: 50%;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    border: 1px solid gray;
+}
+
+.menu div:nth-child(1) {
+    background-color: blue;
+}
+
+.menu div:nth-child(2) {
+    background-color: red;
+}
+
+.menu div:nth-child(3) {
+    background-color: green;
+}
+
+.menu div:nth-child(4) {
+    background-color: purple;
+}
+
+.menu div:nth-child(5) {
+    background-color: pink;
+}
+
+.menu div:nth-child(6) {
+    background-color: yellow;
+}
+
+.menu div:nth-child(7) {
+    background-color: black;
+}
+
+.active {
+    transform: scale(1);
+}
+
+.time {
+    position: relative;
+    top: -20px;
+    left: 63%;
+    display: flex;
+    color: var(--MAIN-COLOR);
+}
+
+.time {
+    font-size: 1.25rem;
+}
+
+

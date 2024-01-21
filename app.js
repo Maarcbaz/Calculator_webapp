@@ -2,15 +2,16 @@ let display = document.getElementById('inputField')
 console.log(display);
 function insert(num) {
     display.value += num;
-    if (mode == "equal") {
-        display.value += num
-        display = 'pokwo'
-        mode = 'calc'
-    }
-    else {
+}
+//     if (mode == "equal") {
+//         display.value += num
+//         display = 'pokwo'
+//         mode = 'calc'
+//     }
+//     else {
 
-    }
-};
+//     }
+// };
 function equal() {
     try {
         display.value = eval(display.value)

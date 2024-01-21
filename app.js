@@ -37,7 +37,7 @@ function getTime() {
     minutes = date.getMinutes()
     seconds = date.getSeconds()
 
-    document.getElementById('time').innerHTML = `${hours} : ${minutes} : ${seconds}`
+    document.getElementById('time').innerHTML = `${hours}:${minutes}:${seconds}`
 }
 
 setInterval(getTime)
@@ -128,3 +128,5 @@ blackTheme.onclick = () => {
     document.body.classList.remove('yellow')
     menu.classList.remove('active')
 }
+
+

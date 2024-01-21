@@ -10,6 +10,7 @@ body {
     justify-content: center;
     min-height: 105vh;
     transition: .2s all;
+    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -182,11 +183,19 @@ input::placeholder {
 .time {
     position: relative;
     top: -20px;
-    left: 63%;
+    left: 60%;
     display: flex;
     color: var(--MAIN-COLOR);
 }
 
 .time {
     font-size: 1.25rem;
+}
+
+@media screen and (max-width: 560px) {
+    .time {
+        position: relative;
+        left: 0;
+        top: -15px;
+    }
 }
